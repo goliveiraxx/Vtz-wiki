@@ -2,6 +2,8 @@
 
 Enciclopédia gratuita para suporte N1/N2, manutenção de computadores e TI. Aplicação estática em React, TypeScript, Vite e React Router.
 
+**Endereço de publicação:** <https://goliveiraxx.github.io/vantz-wiki/>
+
 ## Rodar localmente
 
 Use Node.js 22.12 ou superior. Na pasta do projeto:
@@ -24,7 +26,16 @@ npm run preview
 2. Publique o conteúdo de `dist/` no diretório público do serviço de hospedagem estática escolhido.
 3. Confira a página inicial e uma rota direta como `/#/sintoma/corte-papel`. O site usa hash nas rotas e caminhos relativos para recursos, inclusive quando publicado em subpastas.
 
-No Sites, o arquivo `.openai/hosting.json` associa o checkout ao projeto publicado e aponta para `dist/`. Para hospedagem própria, esse manifesto não é necessário. O site funciona sem banco de dados ou API.
+### GitHub Pages
+
+O projeto já está configurado para ser publicado no repositório `vantz-wiki` da conta `goliveiraxx`. O Vite gera os recursos usando o caminho `/vantz-wiki/`, necessário para o endereço do GitHub Pages.
+
+1. Envie esta pasta para o repositório `vantz-wiki`.
+2. Execute `npm ci` e `npm run build`.
+3. Publique o conteúdo de `dist/` pelo GitHub Pages ou configure uma GitHub Action para executar esse build automaticamente.
+4. Acesse <https://goliveiraxx.github.io/vantz-wiki/>.
+
+O site funciona sem banco de dados ou API.
 
 ## Catálogo e dados locais
 

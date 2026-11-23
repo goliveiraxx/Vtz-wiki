@@ -1,2 +1,4 @@
 import { defineConfig } from 'vite';
-export default defineConfig({ base: './' });
+
+// O repositório é publicado em https://goliveiraxx.github.io/vantz-wiki/
+export default defineConfig({ base: '/vantz-wiki/' });
